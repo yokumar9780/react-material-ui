@@ -7,24 +7,11 @@ import {
 } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Hidden from "@material-ui/core/Hidden";
-import Typography from "@material-ui/core/Typography";
-import Link from "@material-ui/core/Link";
-import Navigator from "./Navigator";
-import Content from "./Content";
-import Header from "./Header";
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {"Copyright © "}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
-    </Typography>
-  );
-}
+import Navigator from "./components/Navigator";
+import Content from "./components/Content";
+import Header from "./components/Header";
+import { Copyright } from "./components/Copyright";
 
 let theme = createMuiTheme({
   palette: {
@@ -129,8 +116,8 @@ theme = {
     },
     MuiAvatar: {
       root: {
-        width: 32,
-        height: 32,
+        width: 50,
+        height: 50,
       },
     },
   },
